@@ -78,7 +78,7 @@ export class DavosEnvironmentClass {
 
   protected localhost: DavosEnvironment = {
     production: false,
-    api_url: 'https://dev-api.heatrabbit.com/api/',
+    api_url: 'https://dev-api.heatfleet.com/api/',
     image_url: 'http:/localhost:5000/uploads/',
     api_version: '1.0',
     api_key: 'oiwe43raiasdl4kha6sdf123',
@@ -98,7 +98,7 @@ export class DavosEnvironmentClass {
   };
   protected dev: DavosEnvironment = {
     production: false,
-    api_url: 'https://dev-api.heatrabbit.com/api/',
+    api_url: 'https://dev-api.heatfleet.com/api/',
     image_url: 'https://heatfleet.com/uploads/',
     api_version: '1.0',
     api_key: 'oiwe43raiasdl4kha6sdf123',
