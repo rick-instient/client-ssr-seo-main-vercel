@@ -1,0 +1,16 @@
+
+
+<div class="outer-container faqs-content">
+
+  
+<div class="big-map-contain"  *ngIf="!service_image_url">
+</div>
+
+  <div  *ngIf="service_image_url">
+    <div class="col-heading" size="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
+      <div class="content">
+        <h3 class="txt-title gd">{{service_title}}</h3><img class="big-map" src="/assets/icon/placeholder-rectangle.png" alt="Town Map Image" title="Town Map Image" loading="lazy" *ngIf="!townmapImage"/><img class="big-map" [srcset]="service_image_url+'?tr=w-225 225w,'+service_image_url+'?tr=w-350 350w,'+service_image_url+'?tr=w-700 700w,'+service_image_url+'?tr=w-900 900w,'+service_image_url+'?tr=w-1200 1200w,'" [alt]="service_alt" [title]="service_title" (error)="onImgError($event)" loading="lazy" *ngIf="townmapImage &amp;&amp; service_image_url"/>
+      </div>
+    </div>
+  </div>
+</div>
