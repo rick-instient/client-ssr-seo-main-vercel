@@ -44,7 +44,7 @@
               <div class="aligner-1" [ngClass]="{'EnableLoggedInUser': config.EnableLoggedInUser}"><img class="imglogo scroll" src="/assets/icons/01-Heatfleet.svg" title="Heatfleet" alt="Heatfleet" [ngClass]="{'EnableLoggedInUser': config.EnableLoggedInUser}" (click)="navigateHome()"  loading="lazy"/>
                 <div class="inputs scrollcontainer add" [ngClass]="{'EnableLoggedInUser': config.EnableLoggedInUser}">
                   <div class="inp scrolldown"></div>
-                  <div class="location-icon png"><img class="sc-loc-icn" src="/assets/icons/dark-location.svg" alt="Location icon" title="Search Location" (click)="navigateModal()"  loading="lazy"/></div>
+                  <div class="location-icon png"><img class="sc-loc-icn" src="./assets/icons/dark-location.svg" alt="Location icon" title="Search Location" (click)="navigateModal()"  loading="lazy"/></div>
                   <div class="inp scrolldown">
                     <p class="label-white-row" *ngIf="!config.delivery_address">Delivery ZIP </p>
                     <p class="label-white-row sticky-label" *ngIf="config.delivery_address">Deliver to</p>
@@ -57,14 +57,14 @@
                 <div class="inputs scrollcontainer scroll qty" [ngClass]="{'EnableLoggedInUser': config.EnableLoggedInUser}">
                   <div class="inp"></div>
        
-                  <div class="location-icon png"><img class="sc-loc-icn-1" src="/assets/icons/quantity.svg" alt="Quantity icon" title="Search Quantity"  loading="lazy"/></div>
+                  <div class="location-icon png"><img class="sc-loc-icn-1" src="./assets/icons/quantity.svg" alt="Quantity icon" title="Search Quantity"  loading="lazy"/></div>
                   <div class="inp">
                     <p class="label-white-row quantity-input">Quantity</p>
                     <input class="cus-white-inp" [(ngModel)]="quantityInput_withGal" type="text"  aria-label="quantityInput_withGal"  inputmode="tel" (keyup.enter)="findDeal()" maxlength="5"  onfocus="this.select()" (input)="updateQuantity($event)" (click)="focusFunction($any($event.target)); clearInputQty()" (focusout)="focusOutFunction($any($event.target).value)"/>
                   </div>
                 </div>
                 <div class="btn scrolldown" size="2.9">
-                  <button class="common-button scrolldown small" (click)="findDeal()" [disabled]="loadingZipResponse" [ngClass]="{'EnableLoggedInUser': config.EnableLoggedInUser}"><img class="sc-search-icn scroll" src="/assets/icons/Search.svg" alt="Search icon" title="Search icon"  loading="lazy"/>
+                  <button class="common-button scrolldown small" (click)="findDeal()" [disabled]="loadingZipResponse" [ngClass]="{'EnableLoggedInUser': config.EnableLoggedInUser}"><img class="sc-search-icn scroll" src="./assets/icons/Search.svg" alt="Search icon" title="Search icon"  loading="lazy"/>
                     <p class="txt-btn scrol-c" [ngClass]="{'EnableLoggedInUser': config.EnableLoggedInUser}">SEARCH</p>
                   </button>
                 </div>
